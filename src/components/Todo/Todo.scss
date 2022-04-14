@@ -1,0 +1,39 @@
+.todo {
+  height: 50px;
+  width: 480px;
+  display: flex;
+  align-items: center;
+  background: rgba($color: #ffffff, $alpha: 1);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  .todo-content {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  button {
+    font-size: 16px;
+    position: absolute;
+    height: 50px;
+    width: 40px;
+    cursor: pointer;
+    color: white;
+    border: none;
+  }
+  .done-btn {
+    right: 40px;
+    background-color: rgb(67, 238, 5);
+    border-bottom: 4px green solid;
+  }
+  .delete-btn {
+    right: 0;
+    border-radius: 0px 10px 10px 0px;   
+    background-color: rgb(234, 10, 10);
+    border-bottom: 4px rgb(124, 5, 5) solid;
+  }
+}
